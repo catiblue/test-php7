@@ -4,6 +4,6 @@ machine:
 
 dependencies:
   post:
-    - sudo cp ~/test-php7/my-site /etc/apache2/sites-available
+    - sudo cp ~/test-php7/my-site.conf /etc/apache2/sites-available
     - a2ensite my-site
     - sudo service apache2 restart
