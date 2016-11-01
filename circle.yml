@@ -1,3 +1,9 @@
 machine:
   php:
     version: 7.0.7
+
+dependencies:
+  post:
+    - cp ~/test-php7/my-site /etc/apache2/sites-available
+    - a2ensite my-site
+    - sudo service apache2 restart
