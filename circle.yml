@@ -5,6 +5,6 @@ machine:
 dependencies:
   post:
     - sudo cp ~/test-php7/my-site.conf /etc/apache2/sites-available
-    - sudo rm /etc/apache2/mods-enabled/php5.load
+    - sudo a2dismod php5
     - sudo a2ensite my-site
     - sudo service apache2 restart
